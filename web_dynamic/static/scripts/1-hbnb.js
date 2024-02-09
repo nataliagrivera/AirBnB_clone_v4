@@ -1,5 +1,8 @@
+#!/usr/bin/node
 $(document).ready(function () {
-  $('input[type="checkbox"]').click(function () {
+  const amenityIds = {};
+
+  $('input[type=checkbox]').click(function () {
     const myListName = [];
     const myId = [];
     $('input[type="checkbox"]:checked').each(function () {
